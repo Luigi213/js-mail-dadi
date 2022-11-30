@@ -6,12 +6,15 @@ button.addEventListener('click', function(){
     // 1.1 per il giocatore e il computer
     let player_1 = num_1;
     let player_2 = num_2;
-    console.log(player_1)
-    console.log(player_2)
+    document.getElementById("num").value = player_1;
+    document.getElementById("num_1").value = player_2;
     // 2- Stabilisco il vincitore in base al punteggio più alto
     let result;
     if(player_1 > player_2){
         result ='Ha vinto player_1'
+    }
+    else if(player_1 == player_2){
+        result ='Avete pareggiato'
     }
     else{
         result ='Ha vinto player_2'
