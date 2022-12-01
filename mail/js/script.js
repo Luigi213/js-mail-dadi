@@ -8,7 +8,7 @@ button.addEventListener('click', function(){
     // 2.1 controllo nella lista se la email inserita può essere accettata
     let accepted = false;
     for(let i=0; i<array_list.length; i++){
-        if(array_list[i] == email){
+        if(email == array_list[i]){
            accepted = true 
         }
     }
